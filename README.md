@@ -12,7 +12,7 @@ npm i gh-pages -D
 ## 在“package.json”的“scripts”中添加两个脚本
 ```sh
 "predeploy":"npm run build",
-"deploy":"gh-pages -d build -r https://github.com/[username]/[project].git -b gh-pages"
+"deploy":"gh-pages -d build -r https://github.com/<username>/<repository>.git -b gh-pages"
 ```
 需要将-r 后面的链接地址改为你的项目的地址。
 -b是切换分支，gh-pages是静态页面分支的名字，叫什么都可以。
