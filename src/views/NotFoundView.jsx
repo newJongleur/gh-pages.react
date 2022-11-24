@@ -1,6 +1,6 @@
 import React from 'react';
 
-function NotFoundView() {
+export default () => {
     return (
         <>
             <label>404</label>
