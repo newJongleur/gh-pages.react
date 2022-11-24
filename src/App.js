@@ -1,28 +1,24 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+// import { BrowserRouter, Routes, Route } from "react-router-dom";// History模式
+import { HashRouter, Routes, Route } from "react-router-dom";// Hash模式
 import Home from './views/HomeView'
 import About from './views/AboutView'
+import About from './views/NotFoundView'
 
 export default () => {
   return (
     <>
-      <BrowserRouter>
+      {/* <BrowserRouter> */}
+      <HashRouter>
         <Routes>
           {/* <Route path="/" element={<LA />}>
             <Route path="/test" element={<Test />} />
           </Route> */}
           <Route index element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="*" element={<NotFound />} />
+          <Route path="*" element={<NotFoundView />} />
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
+      {/* </BrowserRouter> */}
     </>
   )
-};
-// 用来作为 404 页面的组件
-const NotFound = () => {
-  return (
-    <>
-      <label>404</label>
-    </>
-  );
 };
