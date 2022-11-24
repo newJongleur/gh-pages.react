@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from './views/HomeView'
+import About from './views/AboutView'
 
-function App() {
+export default () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          <code>gh-pages.react</code>
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <BrowserRouter>
+        <Routes>
+          {/* <Route path="/" element={<LA />}>
+            <Route path="/test" element={<Test />} />
+          </Route> */}
+          <Route index element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </BrowserRouter>
+    </>
+  )
+};
+// 用来作为 404 页面的组件
+const NotFound = () => {
+  return (
+    <>
+      <label>404</label>
+    </>
   );
-}
-
-export default App;
+};
