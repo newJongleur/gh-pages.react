@@ -8,7 +8,7 @@ npx create-react-app my-app
 ```sh
 npm i gh-pages -D
 ```
-### 初始化仓库，提交代码提交后，登录Github，进入项目，选择Code，复制该项目链接，链接方式SSH或者HTTPS都可以
+### 初始化仓库，提交到公共仓后，登录Github，进入项目，选择Code，复制该项目链接，链接方式SSH或者HTTPS都可以
 ### 在“package.json”的“scripts”中添加两个脚本
 ```javascript
 "predeploy":"npm run build",
