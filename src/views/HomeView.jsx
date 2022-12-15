@@ -5,9 +5,7 @@ export default class HomeView extends React.Component {
     render() {
         return (
             <>
-                <main>
-                    <HelloWorld msg='首页' />
-                </main>
+                <HelloWorld msg='首页' />
             </>
         );
     }

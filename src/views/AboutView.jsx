@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from "react-router-dom";
+import '../assets/About.css'
 
 export default class AboutView extends React.Component {
     render() {

@@ -1,19 +1,18 @@
 import { Link } from "react-router-dom";
 
 import logo from '../assets/logo.svg';
-import '../App.css';
+import '../assets/HelloWorld.css';
 
 export default function HelloWorld(props) {
     return (
-        <div className="App">
-            <header className="App-header">
-                <img src={logo} className="App-logo" alt="logo" />
+        <>
+            <header className="HW-header">
+                <img src={logo} className="HW-logo" alt="logo" />
                 <p>
                     {props.msg}
                 </p>
-                {/* <a href="#" target="_blank" rel="noopener noreferrer">a</a> */}
-                <Link className="App-link" to="/about">关于</Link>
+                <Link to="/about">关于</Link>
             </header>
-        </div>
+        </>
     );
 }
