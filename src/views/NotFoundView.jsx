@@ -1,9 +1,11 @@
-import React from 'react';
+import { React } from 'react';
 
 export default () => {
     return (
         <>
-            <label>404</label>
+            <div className='not-found'>
+                404
+            </div>
         </>
     );
 }

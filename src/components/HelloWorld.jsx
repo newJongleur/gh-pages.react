@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import logo from '../assets/logo.svg';
 import '../assets/HelloWorld.css';
 
-export default function HelloWorld(props) {
+export default (props) => {
     return (
         <>
             <header className="HW-header">

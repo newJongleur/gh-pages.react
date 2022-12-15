@@ -1,7 +1,7 @@
-import React from 'react';
+import { React,PureComponent } from 'react';
 import HelloWorld from '../components/HelloWorld'
 
-export default class HomeView extends React.Component {
+export default class HomeView extends PureComponent {
     render() {
         return (
             <>
